@@ -1,5 +1,5 @@
 // Client ID and API key from the Developer Console
-var CLIENT_ID = '245937121380-4hkp3a4to3kjnnfason41gvd71rqvc06.apps.googleusercontent.com';
+var CLIENT_ID = '245937121380-he6hidl1lkhobedfvtpfpcgbdqfl6ced.apps.googleusercontent.com';
 var API_KEY = 'AIzaSyCt5vOxIML57zscI-Cv33Tjsm-uq_Tt9Ug';
 
 // Array of API discovery doc URLs for APIs
