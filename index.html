@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Working Hours</title>
+        <link rel='stylesheet', href='style.css'>
+    </head>
+    <body>
+        <div id='wrapper'>
+            <div id='header'>
+                <h2>Working Hours</h2> 
+            </div>
+            <div id='content_wrapper'>
+                <div id=id= 'authorize' style='display: none;'>
+                    <p>Authorize to start</p> 
+                    <button id="authorize-button">Authorize</button> 
+                </div>
+                <formname = 'dateForm' id='dateFormId'>
+                    <p>Choose month and year</p>
+
+                    <select name="monthSelect" id='monthSelectId'>
+                        <option(value="0">January</option> 
+                        <option value="1">February</option>
+                        <option value="2">March</option>
+                        <option value="3">April</option>
+                        <option value="4">May</option>
+                        <option value="5">June</option>
+                        <option value="6">July</option>
+                        <option value="7">August</option>
+                        <option value="8">September</option>
+                        <option value="9">October</option>
+                        <option value="10">November</option>
+                        <option value="11">December</option>
+                    </select>
+
+                    <select name="yearSelect" id='yearSelectId'>
+                        <option value="2017">2017</option> 
+                        <option value="2018" selected>2018</option>) 
+                        <option value="2019">2019</option> 
+                    </select>
+                </form>
+               
+                <div id='list_wrapper'>
+                    <div id='total'></div>
+                    <div id='list'></div>
+                </div>
+            </div>
+        </div>
+        <div id='footer'>
+            To use this app you need to get access to 
+            <a href='https://calendar.google.com/calendar?cid=b2hxNWQ0bGt0NmoyZW1oNGYzZHBrNzNoaGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ'>this</a> 
+            calendar
+        </div>
+        <script type="text/javascript" src="googleCalendarEvents.js"></script>
+        <script async defer src="https://apis.google.com/js/api.js"
+          onload="this.onload=function(){};handleClientLoad()"
+          onreadystatechange="if (this.readyState === 'complete') this.onload()"></script>
+    </body>
+</html>
+  
