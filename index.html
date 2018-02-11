@@ -15,34 +15,43 @@
             </div>
 
             <div id='content_wrapper' style='display: none;'>
-                <form name='dateForm' id='dateFormId'>
-                    <p>Choose month and year</p>
+                    <div id='show_buttons'>
+                            <button id='hours_button' style='display: inline-block;'>Show hours for month</button>
+                            <button id='schedule_button' style='display: none;'>Show schedule</button>
+                    </div>
+                <div id='hours_wrapper' style='display: none;'>
+                    <form name='dateForm' id='dateFormId'>
+                        <p>Choose month and year</p>
 
-                    <select name="monthSelect" id='monthSelectId'>
-                        <option value="0">January</option> 
-                        <option value="1">February</option>
-                        <option value="2">March</option>
-                        <option value="3">April</option>
-                        <option value="4">May</option>
-                        <option value="5">June</option>
-                        <option value="6">July</option>
-                        <option value="7">August</option>
-                        <option value="8">September</option>
-                        <option value="9">October</option>
-                        <option value="10">November</option>
-                        <option value="11">December</option>
-                    </select>
+                        <select name="monthSelect" id='monthSelectId'>
+                            <option value="0">January</option> 
+                            <option value="1">February</option>
+                            <option value="2">March</option>
+                            <option value="3">April</option>
+                            <option value="4">May</option>
+                            <option value="5">June</option>
+                            <option value="6">July</option>
+                            <option value="7">August</option>
+                            <option value="8">September</option>
+                            <option value="9">October</option>
+                            <option value="10">November</option>
+                            <option value="11">December</option>
+                        </select>
 
-                    <select name="yearSelect" id='yearSelectId'>
-                        <option value="2017">2017</option> 
-                        <option value="2018" selected>2018</option>) 
-                        <option value="2019">2019</option> 
-                    </select>
-                </form>
-               
-                <div id='list_wrapper'>
-                    <div id='total'></div>
-                    <div id='list'></div>
+                        <select name="yearSelect" id='yearSelectId'>
+                            <option value="2017">2017</option> 
+                            <option value="2018" selected>2018</option>) 
+                            <option value="2019">2019</option> 
+                        </select>
+                    </form>
+                
+                    <div id='list_wrapper'>
+                        <div id='total'></div>
+                        <div id='list'></div>
+                    </div>
+                </div>
+                <div id='schedule_wrapper' style='display: block;'>
+                    <iframe src="https://calendar.google.com/calendar/embed?src=ohq5d4lkt6j2emh4f3dpk73hhk%40group.calendar.google.com&ctz=Europe%2FMoscow" style="border: 0" width="800" height="600" frameborder="0" scrolling="no"></iframe>
                 </div>
             </div>
             <div id='not_true_auth' style='display: none;'>
@@ -60,7 +69,10 @@
                 <button id="signoutButton">Sign out</button> 
             </div>
         </div>
+
         <script type="text/javascript" src="googleCalendarEvents.js"></script>
+        <script type="text/javascript" src="javascripts/changeView.js"></script>
+
         <script async defer src="https://apis.google.com/js/api.js"
           onload="this.onload=function(){};handleClientLoad()"
           onreadystatechange="if (this.readyState === 'complete') this.onload()"></script>
