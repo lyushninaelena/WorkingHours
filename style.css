@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
 }
-#header, #authorize, #dateFormId, #list_wrapper, #not_true_auth, #footer{
+#header, #authorize, #show_buttons, #dateFormId, #list_wrapper, #schedule_wrapper, #not_true_auth, #footer{
   text-align: center;
 }
 #header, a, #list div:hover{
