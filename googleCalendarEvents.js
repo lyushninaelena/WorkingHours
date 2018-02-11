@@ -52,11 +52,11 @@ function updateSigninStatus(isSignedIn) {
   if (isSignedIn) {
     document.getElementById('authorize').style.display = 'none';
     /*here we go*/
-    document.getElementById('dateFormId').style.display = 'block';
+    document.getElementById('content_wrapper').style.display = 'block';
     workingEventList();
   } else {
     document.getElementById('authorize').style.display = 'block';
-    document.getElementById('dateFormId').style.display = 'none'
+    document.getElementById('content_wrapper').style.display = 'none';
   }
 }
 
