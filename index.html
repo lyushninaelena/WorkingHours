@@ -45,11 +45,20 @@
                     <div id='list'></div>
                 </div>
             </div>
+            <div id='not_true_auth' style='display: none;'>
+                This google account doesn't have access to the calendar
+                <br>
+                You can sign out in the bootom of the page
+            </div>
         </div>
         <div id='footer'>
             To use this app you need to get access to 
             <a href='https://calendar.google.com/calendar?cid=b2hxNWQ0bGt0NmoyZW1oNGYzZHBrNzNoaGtAZ3JvdXAuY2FsZW5kYXIuZ29vZ2xlLmNvbQ'>this</a> 
             calendar
+            <div id="signout" style="display: block;">
+                You can sign out here 
+                <button id="signoutButton">Sign out</button> 
+            </div>
         </div>
         <script type="text/javascript" src="googleCalendarEvents.js"></script>
         <script async defer src="https://apis.google.com/js/api.js"
