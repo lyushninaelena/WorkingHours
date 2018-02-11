@@ -25,7 +25,9 @@ body {
   margin: auto;
   width: 400px;
 }
-
+#authorize{
+  text-align: center;
+}
 #monthSelectId{
   margin-right: 5px;
 }
